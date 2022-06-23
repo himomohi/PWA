@@ -1,6 +1,6 @@
 {
-    "name": "appcaster",
-    "short_name": "appcaster",
+    "name": "SIIC개인관리툴",
+    "short_name": "SIIC개인관리툴",
     "icons": [{
       "src": "icons/icon-192x192.png",
       "sizes": "192x192",
