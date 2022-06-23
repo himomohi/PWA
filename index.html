@@ -11,6 +11,17 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.5/xlsx.full.min.js"></script>
 <script src="https://unpkg.com/typeit@8.4.0/dist/index.umd.js"></script>
 <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+<!-- 웹 앱 매니페스트를 읽어 들이기 -->
+<link rel="manifest" href="manifest.json">
+<!-- 서비스 워커를 등록 -->
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js')
+    .then((reg) => {
+      console.log('서비스 워커가 등록됨.', reg);
+    });
+  }
+</script>
 
 
 
